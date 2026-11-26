@@ -35,7 +35,7 @@ git status --short: 无输出（工作区干净）
 
 ![packages 源码目录](images/source-tree.png)
 
-组织成员检查：RoxyOS-i 当前成员为 `RoxyMax1173`（admin）、`cr1206`、`zgypx228`；小组 fork 对该组织可见，后续成员可从组织仓库继续开发。
+组织成员检查：RoxyOS-i 当前成员为 `RoxyMax1173`（admin）、`cr1206`、`zgypx228`；三名成员均已获得小组仓库的 write 权限，小组 fork 对该组织可见，后续成员可从组织仓库继续开发。
 
 ## 二、模块功能与构建分析
 
@@ -125,6 +125,7 @@ coding-agent → agent → ai → schema
 - 报告文件：`REPORT.md`
 - 依赖图源：`dependency-graph.mmd`
 - 课程作业 Issue：https://github.com/hunnuOpenSourceSoftware2026/assignments/issues/335
+
 
 
 
