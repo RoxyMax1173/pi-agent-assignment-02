@@ -29,7 +29,6 @@
 
 ## 二、模块功能与构建分析
 
-说明：下表只统计 `package.json` 的内部直接依赖，不把 `devDependencies`、外部 npm 包算作模块依赖。所有包的版本均为 1.5.2，均使用 TypeScript；除特别说明外，`npm run build` 都是读取本包 `tsconfig.build.json`（继承根目录 `tsconfig.base.json`），把 `src/` 编译到 `dist/`。
 
 | 子文件夹 | 功能 | build 做什么、生成什么 | 直接依赖的内部模块 | 依据 |
 |---|---|---|---|---|
