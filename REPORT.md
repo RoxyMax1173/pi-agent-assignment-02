@@ -59,7 +59,7 @@ git status --short: 无输出（工作区干净）
 
 ![模块直接依赖关系](images/dependency-graph.png)
 
-可编辑 Mermaid 源文件：[dependency-graph.mmd](dependency-graph.mmd)。
+可编辑源文件：[dependency-graph.mmd](dependency-graph.mmd)、[dependency-graph.dot](dependency-graph.dot)。
 
 图中箭头统一为“使用方 → 被依赖方”，只包含内部直接依赖；外部依赖和 `devDependencies` 没有画入。层级划分依据是运行时职责：底层契约/基础设施（schema、telemetry、tui、codemode、mcp）→ 对象与模型层（chord、ai）→ 持久化与 agent 层（durable、agent）→ 远程环境（env）→ 最终 CLI（coding-agent）。
 
@@ -125,5 +125,6 @@ coding-agent → agent → ai → schema
 - 报告文件：`REPORT.md`
 - 依赖图源：`dependency-graph.mmd`
 - 课程作业 Issue：待报告审核后再提交
+
 
 
