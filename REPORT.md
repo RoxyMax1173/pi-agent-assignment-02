@@ -13,21 +13,11 @@
 
 ![组织 fork 仓库](images/org-fork.png)
 
-本地源码位于 `E:\Pi-Agent\pi-hunnu-2026`，使用浅克隆获取：
 
-```bash
-git clone --depth 1 --branch main https://github.com/RoxyOS-i/pi-hunnu-2026.git
-```
 
 实际记录：
 
-```text
-Path: E:\Pi-Agent\pi-hunnu-2026
-origin: https://github.com/RoxyOS-i/pi-hunnu-2026.git
-branch: main
-commit: c3cc91632d0a1950fb122605b190233f2aa0006e
-git status --short: 无输出（工作区干净）
-```
+
 
 ![S1 源码目录、远端、分支和提交号](images/clone-s1.png)
 
