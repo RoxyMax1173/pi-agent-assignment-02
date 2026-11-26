@@ -13,11 +13,21 @@
 
 ![组织 fork 仓库](images/org-fork.png)
 
+本地源码位于 `E:\Pi-Agent\pi-hunnu-2026`，使用浅克隆获取：
 
+```bash
+git clone --depth 1 --branch main https://github.com/RoxyOS-i/pi-hunnu-2026.git
+```
 
 实际记录：
 
-
+```text
+Path: E:\Pi-Agent\pi-hunnu-2026
+origin: https://github.com/RoxyOS-i/pi-hunnu-2026.git
+branch: main
+commit: c3cc91632d0a1950fb122605b190233f2aa0006e
+git status --short: 无输出（工作区干净）
+```
 
 ![S1 源码目录、远端、分支和提交号](images/clone-s1.png)
 
@@ -29,6 +39,7 @@
 
 ## 二、模块功能与构建分析
 
+说明：下表只统计 `package.json` 的内部直接依赖，不把 `devDependencies`、外部 npm 包算作模块依赖。所有包的版本均为 1.5.2，均使用 TypeScript；除特别说明外，`npm run build` 都是读取本包 `tsconfig.build.json`（继承根目录 `tsconfig.base.json`），把 `src/` 编译到 `dist/`。
 
 | 子文件夹 | 功能 | build 做什么、生成什么 | 直接依赖的内部模块 | 依据 |
 |---|---|---|---|---|
@@ -113,7 +124,8 @@ coding-agent → agent → ai → schema
 - 个人报告：https://github.com/RoxyMax1173/pi-agent-assignment-02
 - 报告文件：`REPORT.md`
 - 依赖图源：`dependency-graph.mmd`
-- 课程作业 Issue：待报告审核后再提交
+- 课程作业 Issue：https://github.com/hunnuOpenSourceSoftware2026/assignments/issues/335
+
 
 
 
