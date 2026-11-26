@@ -122,3 +122,5 @@ coding-agent → agent → ai → schema
 - 个人报告：https://github.com/RoxyMax1173/pi-agent-assignment-02
 - 报告文件：`REPORT.md`
 - 依赖图源：`dependency-graph.mmd`
+- 课程作业 Issue：https://github.com/hunnuOpenSourceSoftware2026/assignments/issues/335
+
