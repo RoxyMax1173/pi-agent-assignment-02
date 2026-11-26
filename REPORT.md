@@ -35,6 +35,8 @@ git status --short: 无输出（工作区干净）
 
 ![packages 源码目录](images/source-tree.png)
 
+组织成员检查：RoxyOS-i 当前成员为 `RoxyMax1173`（admin）、`cr1206`、`zgypx228`；小组 fork 对该组织可见，后续成员可从组织仓库继续开发。
+
 ## 二、模块功能与构建分析
 
 说明：下表只统计 `package.json` 的内部直接依赖，不把 `devDependencies`、外部 npm 包算作模块依赖。所有包的版本均为 1.5.2，均使用 TypeScript；除特别说明外，`npm run build` 都是读取本包 `tsconfig.build.json`（继承根目录 `tsconfig.base.json`），把 `src/` 编译到 `dist/`。
