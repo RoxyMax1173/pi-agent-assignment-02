@@ -1,4 +1,4 @@
-# 实践课 2：小组组织建仓与 Pi Agent 源码阅读
+﻿# 实践课 2：小组组织建仓与 Pi Agent 源码阅读
 
 - 姓名：马轩
 - 班级：软件一班
@@ -124,5 +124,6 @@ coding-agent → agent → ai → schema
 - 个人报告：https://github.com/RoxyMax1173/pi-agent-assignment-02
 - 报告文件：`REPORT.md`
 - 依赖图源：`dependency-graph.mmd`
-- 课程作业 Issue：https://github.com/hunnuOpenSourceSoftware2026/assignments/issues/335
+- 课程作业 Issue：待报告审核后再提交
+
 
