@@ -1,0 +1,72 @@
+digraph Pi {
+  graph [
+    rankdir=LR,
+    splines=true,
+    overlap=false,
+    nodesep=0.55,
+    ranksep=1.05,
+    pad=0.3,
+    labelloc="t",
+    label="Pi 模块直接依赖关系（使用方 → 被依赖方）\n仅 package.json 内部直接依赖；devDependencies 未画",
+    fontname="Microsoft YaHei",
+    fontsize=20
+  ];
+  node [
+    shape=box,
+    style="rounded,filled",
+    fillcolor="#eef4ff",
+    color="#3b6ea8",
+    fontname="Microsoft YaHei",
+    fontsize=15,
+    margin="0.20,0.12"
+  ];
+  edge [
+    color="#6f8299",
+    arrowsize=0.75,
+    penwidth=1.5,
+    fontname="Microsoft YaHei",
+    fontsize=10
+  ];
+
+  coding_agent [label="coding-agent", fillcolor="#fdecec", color="#b94a4a"];
+  agent        [label="agent",        fillcolor="#fff4e5", color="#b87920"];
+  env          [label="env",          fillcolor="#fff4e5", color="#b87920"];
+  durable      [label="durable",      fillcolor="#fff4e5", color="#b87920"];
+  chord        [label="chord",        fillcolor="#eaf7ef", color="#3c8a5a"];
+  ai           [label="ai",           fillcolor="#eaf7ef", color="#3c8a5a"];
+  schema       [label="schema"];
+  telemetry    [label="telemetry"];
+  tui          [label="tui"];
+  codemode     [label="codemode"];
+  mcp          [label="mcp"];
+
+  { rank=same; coding_agent; }
+  { rank=same; agent; env; }
+  { rank=same; durable; }
+  { rank=same; chord; ai; }
+  { rank=same; schema; telemetry; tui; codemode; mcp; }
+
+  coding_agent -> agent [color="#b94a4a"];
+  coding_agent -> ai [color="#b94a4a"];
+  coding_agent -> codemode [color="#b94a4a"];
+  coding_agent -> mcp [color="#b94a4a"];
+  coding_agent -> tui [color="#b94a4a"];
+
+  agent -> ai [color="#8a5a2b"];
+  agent -> schema [color="#8a5a2b"];
+
+  durable -> telemetry [color="#b87920"];
+  durable -> schema [color="#b87920"];
+  durable -> chord [color="#b87920"];
+  durable -> ai [color="#b87920"];
+  durable -> codemode [color="#b87920"];
+
+  env -> chord [color="#3c8a5a"];
+  env -> durable [color="#3c8a5a"];
+
+  chord -> schema [color="#3c8a5a"];
+  chord -> telemetry [color="#3c8a5a"];
+
+  ai -> schema [color="#3c8a5a"];
+  ai -> telemetry [color="#3c8a5a"];
+}
