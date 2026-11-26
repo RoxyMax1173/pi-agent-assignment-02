@@ -1,0 +1,32 @@
+flowchart BT
+  schema["schema"]
+  telemetry["telemetry"]
+  tui["tui"]
+  codemode["codemode"]
+  mcp["mcp"]
+
+  chord["chord"]
+  ai["ai"]
+  durable["durable"]
+  agent["agent"]
+  env["env"]
+  coding-agent["coding-agent"]
+
+  chord --> schema
+  chord --> telemetry
+  ai --> schema
+  ai --> telemetry
+  durable --> telemetry
+  durable --> schema
+  durable --> chord
+  durable --> ai
+  durable --> codemode
+  env --> chord
+  env --> durable
+  agent --> ai
+  agent --> schema
+  coding-agent --> agent
+  coding-agent --> ai
+  coding-agent --> codemode
+  coding-agent --> mcp
+  coding-agent --> tui
